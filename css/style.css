@@ -22,6 +22,9 @@ header a {
     height: 50vh;
     overflow: hidden;
 }
+.wrapper {
+    z-index: 1
+}
 .hero-image .image {
     background-position: center center;
     background-repeat: no-repeat;
@@ -42,27 +45,18 @@ header a {
     transition: .5s ease-out;
     padding: 0 5px;
     color: transparent;
-    /* visibility: hidden; */
-    /* animation: cssAnimation 0s 5s forwards;
-    visibility: visible; */
+    z-index: 2;
 }
-/* @keyframes cssAnimation {
-  to   { visibility: hidden; }
-} */
 .next {
     right: 0%;
 }
 .wrapper:hover .prev, .wrapper:hover .next {
     color: gray
 }
-.prev:hover, .next:hover {
+.wrapper:hover .prev:hover, .wrapper:hover .next:hover {
     display: initial;
     color: white;
     transition: .5s ease-in;
-    /* visibility: visible; */
-    
-    /* visibility: visible; */
-    /* transition-delay: 5s; */
 }
 /* .dot-wrapper {
     width: 100%;
