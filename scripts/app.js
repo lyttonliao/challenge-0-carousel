@@ -17,5 +17,5 @@ function slideShow(index) {
     //     slides[i].style.display = "None";
     // }
     slide[0].style = `background-image: url(./images/hero-image-${slideIndex}.jpg)`
-
+    dots[slideIndex].className += " active";
 }
