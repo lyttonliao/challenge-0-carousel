@@ -34,6 +34,54 @@ header a {
     left: 0;
     right: 0;
 }
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    font-size: 100px;
+    top: 35%;
+    transition: .5s ease-out;
+    padding: 0 5px;
+    color: transparent;
+    /* visibility: hidden; */
+    /* animation: cssAnimation 0s 5s forwards;
+    visibility: visible; */
+}
+/* @keyframes cssAnimation {
+  to   { visibility: hidden; }
+} */
+.next {
+    right: 0%;
+}
+.wrapper:hover .prev, .wrapper:hover .next {
+    color: gray
+}
+.prev:hover, .next:hover {
+    display: initial;
+    color: white;
+    transition: .5s ease-in;
+    /* visibility: visible; */
+    
+    /* visibility: visible; */
+    /* transition-delay: 5s; */
+}
+/* .dot-wrapper {
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    display: inline-block; */
+
+/* } */
+/* .dot {
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+} */
+
+
 .hero-image h1, .hero-image h2 {
     color: #FAF9FA;
     text-shadow: 1px 1px 0px #4d9ba1, 2px 2px 1px black;
